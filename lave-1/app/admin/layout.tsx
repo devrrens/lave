@@ -1,4 +1,5 @@
 import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
 import { AdminSidebar } from "@/components/admin/AdminSidebar";
 
 export default async function AdminLayout({
@@ -8,18 +9,13 @@ export default async function AdminLayout({
 }) {
   const session = await auth();
 
-  // Middleware is the main gatekeeper.
-  // If user is accessing /admin/login or unauthenticated, let middleware handle routing.
-  if (!session) {
-    return <>{children}</>;
-  }
-
+  // Server-side auth check
   return (
     <div className="min-h-screen bg-[#FFFCFA]">
-      <AdminSidebar />
-      <div className="lg:pl-64">
-        <div className="pt-16 lg:pt-0">
-          <main className="p-6 lg:p-8">{children}</main>
+      {session && <AdminSidebar />}
+      <div className={session ? "lg:pl-64" : ""}>
+        <div className={session ? "pt-16 lg:pt-0" : ""}>
+          <main className={session ? "p-6 lg:p-8" : ""}>{children}</main>
         </div>
       </div>
     </div>
