@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { db } from "@/lib/db";
 import { OrderListClient } from "@/components/admin/OrderListClient";
 

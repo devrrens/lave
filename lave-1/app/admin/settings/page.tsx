@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { getSettings } from "@/lib/actions/testimonials-settings";
 import { SettingsForm } from "@/components/admin/SettingsForm";
 

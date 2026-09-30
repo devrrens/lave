@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { CategoryForm } from "@/components/admin/CategoryForm";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";

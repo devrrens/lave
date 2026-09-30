@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { getCategories } from "@/lib/actions/categories";
 import { ProductForm } from "@/components/admin/ProductForm";
 import Link from "next/link";

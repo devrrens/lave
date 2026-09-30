@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 export default function AdminPage() {
   return (
     <div className="bg-white rounded-2xl border border-[#EDE2E5] p-8 text-center">

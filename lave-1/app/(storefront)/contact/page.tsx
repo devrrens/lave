@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { getSettings } from "@/lib/actions/testimonials-settings";
 import { MessageCircle, MapPin, Clock, Mail, Phone } from "lucide-react";
 import type { Metadata } from "next";

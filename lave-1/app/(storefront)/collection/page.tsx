@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { db } from "@/lib/db";
 import { ProductGrid } from "@/components/storefront/ProductSections";
 import { CollectionFilters } from "@/components/storefront/CollectionFilters";

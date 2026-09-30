@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { getCategories } from "@/lib/actions/categories";
 import Link from "next/link";
 import { Plus, Package } from "lucide-react";

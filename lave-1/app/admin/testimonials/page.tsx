@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { getTestimonials } from "@/lib/actions/testimonials-settings";
 import { getProducts } from "@/lib/actions/products";
 import { TestimonialListClient } from "@/components/admin/TestimonialListClient";

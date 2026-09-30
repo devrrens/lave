@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { db } from "@/lib/db";
 
 export default async function CustomersPage() {

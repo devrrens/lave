@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { db } from "@/lib/db";
 import { Star } from "lucide-react";
 import type { Metadata } from "next";
