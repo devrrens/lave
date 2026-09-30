@@ -31,6 +31,8 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260929.1",
+    "@neon/config": "^1.8.2",
+    "@neon/env": "^1.4.7",
     "@prisma/client": "^6.19.3",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/bcryptjs": "^3.0.0",
