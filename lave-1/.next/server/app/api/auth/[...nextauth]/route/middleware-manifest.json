@@ -1,0 +1,46 @@
+{
+  "sorted_middleware": [
+    "/api/auth/[...nextauth]/route"
+  ],
+  "middleware": {},
+  "instrumentation": null,
+  "functions": {
+    "/api/auth/[...nextauth]/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/api/auth/[...nextauth]/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_api_auth_[___nextauth]_route_actions_0rd81-f.js",
+        "server/edge/chunks/[root-of-the-server]__02_zxj-._.js",
+        "server/edge/chunks/_1znu2w7._.js",
+        "server/edge/chunks/[root-of-the-server]__0-rovge._.js",
+        "server/edge/chunks/1fqa_next_dist_esm_build_templates_edge-wrapper_1f-07vi.js"
+      ],
+      "name": "app/api/auth/[...nextauth]/route",
+      "page": "/api/auth/[...nextauth]/route",
+      "entrypoint": "server/edge/chunks/1fqa_next_dist_esm_build_templates_edge-wrapper_1f-07vi.js",
+      "matchers": [
+        {
+          "regexp": "^/api/auth/(?P<nxtPnextauth>.+?)(?:/)?$",
+          "originalSource": "/api/auth/[...nextauth]"
+        }
+      ],
+      "wasm": [
+        {
+          "name": "wasm_2978e70454ffa8346e0b5b8bf49cd341",
+          "filePath": "server/edge/chunks/1oji__prisma_client_query_engine_bg_0athij3.wasm"
+        }
+      ],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "pH1mOwSBnZEvg6UP4sleV",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "DC10W7ej0TC64QxlK4wvjYJj3Rj0xqYlCkb8fnYaVl0=",
+        "__NEXT_PREVIEW_MODE_ID": "ef187ffb5ca87f68d2a04a41b17ada6f",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "3af50571fa5955807c65c86c44f2a9dfd6355c9b95cde23245c26a3dc88ffdf8",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "60b1c7a792faca3636710b7494d10e3f2dae12789548e83d3527a4ce486692c5"
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "node": {},
+  "edge": {
+    "40a3d9bb55ed6a334408a3d5eb1791be86c16b1ebd": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createProduct",
+      "filename": "lib/actions/products.ts"
+    },
+    "40c0f326b531e365e5c33432250f13a8df60044f9c": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteProduct",
+      "filename": "lib/actions/products.ts"
+    },
+    "40e5bffe30509518bd49b7aca9ff2fe56713f28453": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "getProducts",
+      "filename": "lib/actions/products.ts"
+    },
+    "40f16adf1a19151157b08ed1e3cac5f058c9932c35": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "getProductById",
+      "filename": "lib/actions/products.ts"
+    },
+    "40f422e885c6769edd8eb36f22d1ccaf201c061668": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "duplicateProduct",
+      "filename": "lib/actions/products.ts"
+    },
+    "60e180d7cbdecb5049d7907aecf0f1417a30f11ef4": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateProduct",
+      "filename": "lib/actions/products.ts"
+    },
+    "00a80c0922f33c4ba766311491d81bf0a0f858589e": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "getCategories",
+      "filename": "lib/actions/categories.ts"
+    },
+    "40276f62c9035c0a490147df36ad0d66ce448253aa": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createCategory",
+      "filename": "lib/actions/categories.ts"
+    },
+    "40dc4480cd9268ccc96eecb0856d37f4a4eebc2450": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteCategory",
+      "filename": "lib/actions/categories.ts"
+    },
+    "6012791a006be88389974692345319f8a95d8bf764": {
+      "workers": {
+        "app/admin/products/page": {
+          "moduleId": 3202,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateCategory",
+      "filename": "lib/actions/categories.ts"
+    }
+  }
+}

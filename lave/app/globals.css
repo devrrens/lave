@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  /* Soft Pink Boutique — design.md */
+  --color-blush-100: #fbecef;
+  --color-blush-200: #f6dde5;
+  --color-blush-300: #e8b7c6;
+
+  --color-cream: #fff7f3;
+  --color-warm: #fffcfa;
+
+  --color-ink: #3d3436;
+  --color-ink-soft: #75696c;
+  --color-ink-mute: #a99b9f;
+
+  --color-line: #ede2e5;
+
+  --color-leaf: #7a9b82;
+  --color-honey: #c79b55;
+  --color-rose-deep: #b86a72;
+
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 16px;
+  --radius-feature: 24px;
+  --radius-input: 12px;
+
+  --shadow-soft: 0 8px 30px rgba(61, 52, 54, 0.06);
+}
+
+body {
+  background: var(--color-warm);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+.font-serif {
+  font-family: var(--font-serif);
+}

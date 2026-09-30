@@ -1,0 +1,16 @@
+{
+  "node": {},
+  "edge": {
+    "607b459ba4bba5d16475637bb171af8d4500f402d0": {
+      "workers": {
+        "app/admin/inventory/page": {
+          "moduleId": 51606,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateStock",
+      "filename": "lib/actions/admin.ts"
+    }
+  }
+}

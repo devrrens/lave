@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: file:/app/data/prod.db
+      AUTH_SECRET: ${AUTH_SECRET:-dev-secret-ganti-di-production}
+      NEXTAUTH_URL: ${NEXTAUTH_URL:-http://localhost:3000}
+    ports:
+      - "3000:3000"
+    volumes:
+      # Persistent data: uploads + SQLite — agent.md:13
+      - ./data:/app/data

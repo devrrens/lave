@@ -1,0 +1,3 @@
+{
+  "/(storefront)/product/[slug]/page": "app-edge-has-no-entrypoint"
+}

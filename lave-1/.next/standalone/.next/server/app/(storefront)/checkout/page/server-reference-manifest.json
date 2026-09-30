@@ -1,0 +1,16 @@
+{
+  "node": {
+    "4021a093f8e4cbf1d5fc0281226841eaa6a7a64f91": {
+      "workers": {
+        "app/(storefront)/checkout/page": {
+          "moduleId": 40673,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createOrder",
+      "filename": "lib/actions/orders.ts"
+    }
+  },
+  "edge": {}
+}

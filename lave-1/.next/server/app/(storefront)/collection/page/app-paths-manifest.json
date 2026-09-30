@@ -1,0 +1,3 @@
+{
+  "/(storefront)/collection/page": "app-edge-has-no-entrypoint"
+}

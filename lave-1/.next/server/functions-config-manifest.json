@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "functions": {
+    "/": {},
+    "/about": {},
+    "/admin": {},
+    "/admin/categories": {},
+    "/admin/categories/[id]/edit": {},
+    "/admin/categories/new": {},
+    "/admin/customers": {},
+    "/admin/homepage": {},
+    "/admin/inventory": {},
+    "/admin/login": {},
+    "/admin/orders": {},
+    "/admin/products": {},
+    "/admin/products/[id]/edit": {},
+    "/admin/products/new": {},
+    "/admin/promotions": {},
+    "/admin/settings": {},
+    "/admin/testimonials": {},
+    "/api/auth/[...nextauth]": {},
+    "/api/upload": {},
+    "/collection": {},
+    "/contact": {},
+    "/product/[slug]": {},
+    "/testimonials": {}
+  }
+}

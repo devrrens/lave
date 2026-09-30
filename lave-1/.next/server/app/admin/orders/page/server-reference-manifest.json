@@ -1,0 +1,16 @@
+{
+  "node": {},
+  "edge": {
+    "60e8f778f79acf744f986df2950e64fa2cc1917042": {
+      "workers": {
+        "app/admin/orders/page": {
+          "moduleId": 94841,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateOrderStatus",
+      "filename": "lib/actions/admin.ts"
+    }
+  }
+}

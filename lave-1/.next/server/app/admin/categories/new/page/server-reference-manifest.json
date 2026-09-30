@@ -1,0 +1,27 @@
+{
+  "node": {},
+  "edge": {
+    "40276f62c9035c0a490147df36ad0d66ce448253aa": {
+      "workers": {
+        "app/admin/categories/new/page": {
+          "moduleId": 25595,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createCategory",
+      "filename": "lib/actions/categories.ts"
+    },
+    "6012791a006be88389974692345319f8a95d8bf764": {
+      "workers": {
+        "app/admin/categories/new/page": {
+          "moduleId": 25595,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateCategory",
+      "filename": "lib/actions/categories.ts"
+    }
+  }
+}
