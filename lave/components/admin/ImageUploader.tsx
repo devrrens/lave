@@ -1,6 +1,9 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { compressImage } from "@/lib/image";
+
+const MAX_BYTES = 3 * 1024 * 1024;
 
 export function ImageUploader({
   folder,
@@ -16,15 +19,20 @@ export function ImageUploader({
   async function handle(file: File | undefined) {
     if (!file) return;
     setError(null);
-    if (file.size > 5 * 1024 * 1024) {
-      setError("Maksimal 5 MB.");
+    if (!file.type.startsWith("image/")) {
+      setError("File harus berupa gambar (JPG, PNG, WEBP).");
       return;
     }
     setUploading(true);
     try {
+      const optimized = await compressImage(file);
+      if (optimized.size > MAX_BYTES) {
+        setError("Ukuran gambar masih lebih dari 3 MB setelah dikompres.");
+        return;
+      }
       const form = new FormData();
       form.set("folder", folder);
-      form.set("file", file);
+      form.set("file", optimized);
       const res = await fetch("/api/upload", { method: "POST", body: form });
       const data = await res.json();
       if (!res.ok) {

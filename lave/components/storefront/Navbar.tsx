@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, ShoppingBag, X } from "lucide-react";
 import { cartCount } from "@/lib/cart";
@@ -15,7 +16,7 @@ const LINKS = [
   { href: "/contact", label: "Contact" },
 ];
 
-export function Navbar({ brand }: { brand: string }) {
+export function Navbar({ brand, logoUrl }: { brand: string; logoUrl?: string }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [count, setCount] = useState(0);
@@ -34,7 +35,16 @@ export function Navbar({ brand }: { brand: string }) {
   return (
     <header className="sticky top-0 z-40 border-b border-[#EDE2E5] bg-[#FFFCFA]/95 backdrop-blur">
       <div className="mx-auto flex h-16 w-full max-w-[1200px] items-center justify-between px-5 md:px-8">
-        <Link href="/" className="font-serif text-lg font-semibold">
+        <Link href="/" className="flex items-center gap-2 font-serif text-lg font-semibold">
+          {logoUrl && (
+            <Image
+              src={logoUrl}
+              alt={brand}
+              width={36}
+              height={36}
+              className="h-9 w-9 rounded-full object-cover"
+            />
+          )}
           {brand}
         </Link>
 

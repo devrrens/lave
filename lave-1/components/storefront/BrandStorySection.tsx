@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function BrandStorySection() {
   return (
     <section className="bg-[#FFF7F3] py-16 md:py-24">
@@ -5,10 +7,14 @@ export function BrandStorySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* Image side */}
           <div className="relative">
-            <div className="aspect-[4/5] bg-[#F6DDE5] rounded-3xl overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center">
-                <span className="font-serif text-6xl text-[#E8B7C6]/40 select-none">BJ</span>
-              </div>
+            <div className="aspect-[4/5] bg-[#F6DDE5] rounded-3xl overflow-hidden relative">
+              <Image
+                src="/images/store/toko-barokah-jaya-fashion.jpeg"
+                alt="Toko Barokah Jaya Fashion"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
             <div className="absolute -bottom-6 -right-4 md:-right-8 w-40 h-40 bg-[#FBECEF] rounded-3xl -z-10" />
           </div>

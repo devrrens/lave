@@ -44,7 +44,7 @@ export default async function StorefrontLayout({
 
   return (
     <div className="min-h-dvh bg-[#FFFCFA] text-[#3D3436]">
-      <Navbar brand={settings.brand_name || "Barokah Jaya Fashion"} />
+      <Navbar brand={settings.brand_name || "Barokah Jaya Fashion"} logoUrl={settings.logo_url} />
       {children}
       <Footer settings={settings} />
     </div>

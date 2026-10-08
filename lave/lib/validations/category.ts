@@ -7,7 +7,7 @@ export const categorySchema = z.object({
     .min(2, "Slug minimal 2 karakter.")
     .max(120)
     .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "Slug: huruf kecil, angka, strip."),
-  imageUrl: z.string().max(500).optional().or(z.literal("")),
+  imageUrl: z.string().max(8_000_000).optional().or(z.literal("")),
   sortOrder: z.coerce.number().int().min(0).default(0),
 });
 

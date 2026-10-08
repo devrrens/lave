@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 const OPTIONAL_URL = z.string().max(500).optional().or(z.literal(""));
+const IMAGE_URL = z.string().max(8_000_000).optional().or(z.literal(""));
 
 export const settingsSchema = z.object({
   brand_name: z.string().min(2).max(100),
@@ -13,7 +14,7 @@ export const settingsSchema = z.object({
   instagram: z.string().max(100).optional().or(z.literal("")),
   tiktok: z.string().max(100).optional().or(z.literal("")),
   facebook: z.string().max(100).optional().or(z.literal("")),
-  logo_url: OPTIONAL_URL,
+  logo_url: IMAGE_URL,
   seo_title: z.string().max(120).optional().or(z.literal("")),
   seo_description: z.string().max(300).optional().or(z.literal("")),
 });

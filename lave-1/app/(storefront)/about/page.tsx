@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Tentang Kami",
@@ -21,8 +22,14 @@ export default function AboutPage() {
 
       {/* Story */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center mb-20">
-        <div className="aspect-[4/5] bg-[#F6DDE5] rounded-3xl flex items-center justify-center">
-          <span className="font-serif text-8xl text-[#E8B7C6]/40 select-none">BJ</span>
+        <div className="relative aspect-[4/5] bg-[#F6DDE5] rounded-3xl overflow-hidden">
+          <Image
+            src="/images/store/toko-barokah-jaya-fashion.jpeg"
+            alt="Toko Barokah Jaya Fashion"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover"
+          />
         </div>
         <div className="space-y-6">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#3D3436]">

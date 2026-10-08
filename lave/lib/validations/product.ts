@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const productImageSchema = z.object({
-  url: z.string().min(1).max(500),
+  url: z.string().min(1).max(8_000_000),
   alt: z.string().max(200).optional().or(z.literal("")),
 });
 

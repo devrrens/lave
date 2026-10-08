@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(env -u DATABASE_URL npm run db:seed 2 >& 1)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

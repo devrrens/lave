@@ -5,6 +5,9 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Upload, X, Plus, Trash2 } from "lucide-react";
 import { createProduct, updateProduct, type ProductInput } from "@/lib/actions/products";
+import { compressImage } from "@/lib/image";
+
+const MAX_IMAGE_BYTES = 3 * 1024 * 1024;
 
 type Category = { id: string; name: string };
 type ProductFormProps = {
@@ -76,12 +79,18 @@ export function ProductForm({ categories, product }: ProductFormProps) {
   };
 
   const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
+    const input = e.target;
+    const file = input.files?.[0];
     if (!file) return;
     setUploading(true);
+    setError(null);
     try {
+      const optimized = await compressImage(file);
+      if (optimized.size > MAX_IMAGE_BYTES) {
+        throw new Error("Ukuran gambar masih lebih dari 3 MB setelah dikompres");
+      }
       const fd = new FormData();
-      fd.append("file", file);
+      fd.append("file", optimized);
       fd.append("folder", "products");
       const res = await fetch("/api/upload", { method: "POST", body: fd });
       const data = await res.json();
@@ -91,6 +100,7 @@ export function ProductForm({ categories, product }: ProductFormProps) {
       setError(err instanceof Error ? err.message : "Upload gagal");
     } finally {
       setUploading(false);
+      input.value = "";
     }
   };
 

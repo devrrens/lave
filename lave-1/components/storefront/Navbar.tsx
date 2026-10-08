@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { ShoppingBag, Menu, X, Search } from "lucide-react";
 
@@ -20,12 +21,21 @@ export function Navbar() {
         </button>
 
         {/* Brand Logo */}
-        <Link href="/" className="text-center md:text-left">
-          <span className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-[#3D3436]">
-            Barokah Jaya
-          </span>
-          <span className="block text-[10px] tracking-[0.2em] text-[#75696C] uppercase font-sans -mt-1">
-            Fashion Boutique
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/images/logo/logo-barokah-jaya-fashion.jpeg"
+            alt="Barokah Jaya Fashion"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-full object-cover"
+          />
+          <span className="text-left">
+            <span className="block font-serif text-xl md:text-2xl font-bold tracking-tight text-[#3D3436]">
+              Barokah Jaya
+            </span>
+            <span className="block text-[10px] tracking-[0.2em] text-[#75696C] uppercase font-sans -mt-1">
+              Fashion Boutique
+            </span>
           </span>
         </Link>
 
